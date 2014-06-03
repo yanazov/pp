@@ -156,3 +156,33 @@ function checkTime(i){
 	}
 	return i;
 }
+function js_popup_close(){
+	document.getElementsByClassName('popup-fild')[0].style.display = "none";
+}
+function js_popup_open(){
+	document.getElementsByClassName('popup-fild')[0].style.display = "block";
+}
+function js_login_close_fon(event) {
+  // получить объект событие
+  event = event || window.event
+  var t = event.target || event.srcElement
+  
+  if(t.className == "popup-fild"){
+		document.getElementsByClassName('popup-fild')[0].style.display = "none";
+	}		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -51,7 +51,7 @@
 						</span>
 					</div>
 					<div class="row m10t">	
-						<a href="#" class="btn btn-sm bg-btn-light-orange pull-right">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a>
+						<a href="#" class="btn btn-sm bg-btn-light-orange pull-right" onclick="js_popup_open()">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a>
 					</div>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 							<div class="cell-4 m10t">
 							</div>
 							<div class="cell-3 m10t">
-								<a href="#" class="btn bg-btn-vivid-orange">БРОНИРОВАТЬ</a>
+								 <a href="#" class="btn bg-btn-vivid-orange">БРОНИРОВАТЬ</a>
 							</div>
 						</div>
 					</form>
@@ -489,7 +489,24 @@
 		</div>
 	</footer>
 	<script src="js/calendar2.js" type="text/javascript"></script>
+	<div class="popup-fild" onClick="js_login_close_fon(event)">
+		<div class="center">
+			<form class="callback">
+				<span class="callback-close" onclick="js_popup_close()"></span>
+				<div class="callback-ttl color-white font-cond">
+					ЗАКАЗАТЬ ЗВОНОК
+				</div>
+				<div class="">
+					Наш менеджер перевонит вам в ближайшее время!
+				</div>
+				<input class="m10t"type="text">
+				<input class="m10t" type="text">
+				 <a href="#" class="btn bg-btn-vivid-orange M15T">ЗАКАЗАТЬ</a>
 	
+			</form>
+	
+		</div>
+	</div>
 	
 	
 </body>
