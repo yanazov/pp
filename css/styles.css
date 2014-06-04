@@ -669,7 +669,7 @@ thead .w480{
 	top: 302px;
 	width: 25px;
 	height: 40px;
-	background: url(../i/arrow-sprite.png) 0 9px no-repeat;
+	background: url(../i/arrow-sprite.png) 10px 9px no-repeat;
 	cursor: pointer;
 }
 .arrow-next{
@@ -678,7 +678,7 @@ thead .w480{
 	top: 302px;
 	width: 25px;
 	height: 40px;
-	background: url(../i/arrow-sprite.png) 15px -29px no-repeat;
+	background: url(../i/arrow-sprite.png) 5px -29px no-repeat;
 	cursor: pointer;
 }
 .slider-ttl{
