@@ -800,9 +800,35 @@ thead .w480{
 	left: 0px;
 	z-index: 60;
 }
-
-
-
+.slider-txt1{
+	display: block;
+	position: relative;
+	width: 256px;
+	font-size: 180%;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+}
+.slider-txt2{
+	display: block;
+	position: relative;
+	width: 256px;
+	font-size: 180%;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	text-decoration: line-through;
+}
+.slider-txt3{
+	display: block;
+	position: relative;
+	width: 256px;
+	font-size: 190%;
+	margin: 0 auto;
+	margin-top: 5px;
+	text-align: center;	
+	color: #9d6f16;
+}
 
 
 
