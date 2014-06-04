@@ -171,9 +171,24 @@ function js_login_close_fon(event) {
 		document.getElementsByClassName('popup-fild')[0].style.display = "none";
 	}		
 }
+function js_close_select(number, t, select_id){
+	document.getElementById(number).value = t.innerHTML;
+	document.getElementById(select_id).style.display = 'none';
+	document.getElementById('select-fon-close').style.display = 'none';
+	
+}
+function js_open_select(select_id){
+		document.getElementById(select_id).style.display = 'block';
+		document.getElementById('select-fon-close').style.display = 'block';
 
-
-
+}
+function js_select_close_fon(){
+	document.getElementById('select1').style.display = 'none';
+	document.getElementById('select2').style.display = 'none';
+	document.getElementById('select3').style.display = 'none';
+	document.getElementById('select4').style.display = 'none';
+	document.getElementById('select-fon-close').style.display = 'none';
+}
 
 
 

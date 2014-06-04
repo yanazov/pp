@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
@@ -13,7 +14,6 @@
  
 </head>
 <body>	
-	
 	<header class="header">
 		<div class="bg-header">	
 		</div>
@@ -25,24 +25,36 @@
 				<div class="cell-6 m25t">
 					<div class="row">
 						<ul class="social_links pull-right bigger-160">
-							<a href="#">
-								<i class="fa fa-tumblr color-white"></i>
-							</a>
-							<a href="#">
-								<i class="fa fa-twitter color-white"></i>
-							</a>
-							<a href="#">
-								<i class="fa fa-facebook color-white"></i>
-							</a>
-							<a href="#">
-								<i class="fa fa-youtube color-white"></i>
-							</a>
-							<a href="#">
-								<i class="fa fa-google-plus color-white"></i>
-							</a>
-							<a href="#">
-								<i class="fa fa-rss color-white"></i>
-							</a>
+							<li>
+								<a href="#">
+									<i class="fa fa-tumblr color-white"></i>
+								</a>
+							</li>	
+							<li>	
+								<a href="#">
+									<i class="fa fa-twitter color-white"></i>
+								</a>
+							</li>	
+							<li>	
+								<a href="#">
+									<i class="fa fa-facebook color-white"></i>
+								</a>
+							</li>	
+							<li>	
+								<a href="#">
+									<i class="fa fa-youtube color-white"></i>
+								</a>
+							</li>	
+							<li>	
+								<a href="#">
+									<i class="fa fa-google-plus color-white"></i>
+								</a>
+							</li>	
+							<li>	
+								<a href="#">
+									<i class="fa fa-rss color-white"></i>
+								</a>
+							</li>
 						</ul>
 					</div>	
 					<div class="row m5t">	
@@ -64,7 +76,7 @@
 					ВЫДАЮЩЕГОСЯ ГОРОДА				
 				</div>
 				<div class="fon-gradient">
-					<form action="" class="reserved bigger-130">
+					<form class="reserved bigger-150">
 						<div class="cell-4"></div>
 						<div class="cell-5 row">
 							<div class="color-white bigger-210 font-cond">
@@ -76,7 +88,7 @@
 								<span class="reserved-txt color-white">ЗАЕЗД:</span>
 							</div>
 							<div class="cell-5 m15t input-overlay">
-								<input class="icon-calendar" type="text" onfocus="this.select();lcs(this)"
+								<input class="icon-calendar bigger-150" type="text" onfocus="this.select();lcs(this)"
 									onclick="event.cancelBubble=true;this.select();lcs(this)">
 							</div>
 						</div>
@@ -94,8 +106,14 @@
 								<span class="reserved-txt color-white">ВЗРОСЛЫЕ:</span>
 							</div>
 							<div class="cell-3 m10t input-overlay">
-								<input type="text">
-								<a href="#" class="icon-arrow"></a>
+								<input id="input1" type="text" onclick="js_open_select('select1')">
+								<span class="icon-arrow" onclick="js_open_select('select1')"></span>
+								<ul id="select1" class="select1">
+									<li onclick="js_close_select('input1', this, 'select1')">1</li>
+									<li onclick="js_close_select('input1', this, 'select1')">2</li>
+									<li onclick="js_close_select('input1', this, 'select1')">3</li>
+									<li onclick="js_close_select('input1', this, 'select1')">4</li>
+								</ul>
 							</div>
 						</div>	
 						<div class="row">
@@ -103,8 +121,14 @@
 								<span class="reserved-txt color-white">ДЕТИ:</span>
 							</div>
 							<div class="cell-3 m10t input-overlay">
-								<input type="text">
-								<a href="#" class="icon-arrow"></a>
+								<input id="input2" type="text" onclick="js_open_select('select2')">
+								<span class="icon-arrow" onclick="js_open_select('select2')"></span>
+								<ul id="select2" class="select1">
+									<li onclick="js_close_select('input2', this, 'select2')">0</li>
+									<li onclick="js_close_select('input2', this, 'select2')">1</li>
+									<li onclick="js_close_select('input2', this, 'select2')">2</li>
+									<li onclick="js_close_select('input2', this, 'select2')">3</li>
+								</ul>
 							</div>
 						</div>	
 						<div class="row">
@@ -138,7 +162,7 @@
 						<span id="cell-day2" class="timer-cell"></span>
 						<span class="colon"></span>
 						<span id="cell-hour1" class="timer-cell"></span>
-						<span id="cell-hour2"class="timer-cell"></span>
+						<span id="cell-hour2" class="timer-cell"></span>
 						<span class="colon"></span>
 						<span id="cell-minut1" class="timer-cell"></span>
 						<span id="cell-minut2" class="timer-cell"></span>
@@ -156,7 +180,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="cell-12 bg-orangish-white">
+	<div class="cell-12 bg-orangish-white04 z50">
 		<div class="center">
 			<div class="row text-center ttl">
 				СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
@@ -165,8 +189,9 @@
 				Отель «Премьер Палас» не только заботится о гостях в своих стенах, 
 				но и предлагает многочисленные опции планирования путешествия.
 			</div>
-			<table class="m20t">
+			<table class="m20t bigger-130">
 				<tbody>
+				<tr>
 					<td class="blok-border">
 						<span class="color-strong-orange">					
 							Теперь нашим постояльцам доступен тариф 
@@ -191,6 +216,7 @@
 							<li>визит в Фитнес-клуб отеля с бассейном под стеклянным куполом.</li>
 						</ul>
 					</td>
+					</tr>
 				</tbody>
 			</table>
 			<div class="row text-center bigger-130 m15t m30b">
@@ -200,7 +226,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="cell-12 bg-orangish-white2">
+	<div class="cell-12 bg-orangish-white204 z50">
 		<div class="center">
 			<div class="row text-center ttl">
 				НОМЕРА
@@ -353,7 +379,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="cell-12 bg-strong-orange-yellow">
+	<div class="cell-12 bg-strong-orange-yellow04 z50">
 		<div class="center">
 			<div class="timer-group2">
 					<div class="timer-ttl color-white">
@@ -374,7 +400,7 @@
 						<span id="cell-day4" class="timer-cell"></span>
 						<span class="colon"></span>
 						<span id="cell-hour3" class="timer-cell"></span>
-						<span id="cell-hour4"class="timer-cell"></span>
+						<span id="cell-hour4" class="timer-cell"></span>
 						<span class="colon"></span>
 						<span id="cell-minut3" class="timer-cell"></span>
 						<span id="cell-minut4" class="timer-cell"></span>
@@ -391,10 +417,11 @@
 				</div>
 		</div>
 	</div>
-	<div class="cell-12 bg-orangish-white2">
+	<div class="cell-12 bg-orangish-white204 z50">
 		<div class="center">
 			<table class="m10t m30b">
 				<thead>
+					<tr>
 					<td class="w480">
 						<span class="row text-center ttl">ОТЗЫВЫ</span>
 					</td>
@@ -403,9 +430,11 @@
 					<td class="w480">
 							<span class="row text-center ttl m20b">БРОНИРОВАНИЕ</span>
 					</td>				
+					</tr>
 				</thead>
 				<tbody>
-					<td class="w480">
+					<tr>
+					<td class="w480  tborder">
 						<span class="row text-center ttl">ОТЗЫВЫ</span>
 					</td>
 					<td class="w40">
@@ -414,38 +443,50 @@
 						<form>						
 							<div class="row">
 								<div class="cell-4 m20t">
-									<span class="reserved-txt color-dark-gray">ЗАЕЗД:</span>
+									<span class="reserved-txt color-dark-gray bigger-130">ЗАЕЗД:</span>
 								</div>
 								<div class="cell-7 m20t input-overlay">
-									<input class="icon-calendar2" type="text" onfocus="this.select();lcs(this)"
+									<input class="icon-calendar2 bigger-150" type="text" onfocus="this.select();lcs(this)"
 									onclick="event.cancelBubble=true;this.select();lcs(this)">
 								</div>
 							</div>
 							<div class="row">
 								<div class="cell-4 m10t">
-									<span class="reserved-txt">ВЫЕЗД:</span>
+									<span class="reserved-txt bigger-130">ВЫЕЗД:</span>
 								</div>
 								<div class="cell-7 m10t input-overlay">
-									<input class="icon-calendar2" type="text" onfocus="this.select();lcs(this)"
+									<input class="icon-calendar2 bigger-150" type="text" onfocus="this.select();lcs(this)"
 									onclick="event.cancelBubble=true;this.select();lcs(this)">
 								</div>
 							</div>	
 							<div class="row">
 								<div class="cell-4 m10t">
-									<span class="reserved-txt">ВЗРОСЛЫЕ:</span>
+									<span class="reserved-txt bigger-130">ВЗРОСЛЫЕ:</span>
 								</div>
 								<div class="cell-4 m10t input-overlay">
-									<input type="text">
-									<a href="#" class="icon-arrow"></a>
+									<input id="input3" class="bigger-150" type="text" onclick="js_open_select('select3')">
+									<span class="icon-arrow" onclick="js_open_select('select3')"></span>
+									<ul id="select3" class="select1 width-2">
+										<li onclick="js_close_select('input3', this, 'select3')">1</li>
+										<li onclick="js_close_select('input3', this, 'select3')">2</li>
+										<li onclick="js_close_select('input3', this, 'select3')">3</li>
+										<li onclick="js_close_select('input3', this, 'select3')">4</li>
+									</ul>
 								</div>
 							</div>	
 							<div class="row">
 								<div class="cell-4 m10t">
-									<span class="reserved-txt">ДЕТИ:</span>
+									<span class="reserved-txt bigger-130">ДЕТИ:</span>
 								</div>
 								<div class="cell-4 m10t input-overlay">
-									<input type="text">
-									<a href="#" class="icon-arrow"></a>
+									<input id="input4" class="bigger-150" type="text" onclick="js_open_select('select4')">
+									<span class="icon-arrow" onclick="js_open_select('select4')"></span>
+									<ul id="select4" class="select1 width-2">
+										<li onclick="js_close_select('input4', this, 'select4')">0</li>
+										<li onclick="js_close_select('input4', this, 'select4')">1</li>
+										<li onclick="js_close_select('input4', this, 'select4')">2</li>
+										<li onclick="js_close_select('input4', this, 'select4')">3</li>
+									</ul>
 								</div>
 							</div>	
 							<div class="row">
@@ -457,17 +498,19 @@
 							</div>
 						</form>
 					</td>
+					</tr>
 				</tbody>			
 			</table>
 	
 		</div>
 	</div>
-	<footer class="footer cell-12">
+	<footer class="footer cell-12 z50">
 		<div class="center">
 			<table class="m40t">
 				<tbody>
-					<td>
-						<span class="bigger-140 font-bold">Наш телефон:</span>
+					<tr>
+					<td class="text-footer">
+						<span class="m40t bigger-140 font-bold">Наш телефон:</span>
 						<br/>
 						<span class="font-bold bigger-290 color-strong-orange">+380 (44) 244 12 01</span>
 						<div class="bigger-150 m5t">Звонки по Украине бесплатно</div>
@@ -481,14 +524,78 @@
 						</div>
 					
 					</td>
-				
+					</tr>
 				</tbody>			
 			</table>
-		
+			<div class="footer-bottom m10t">
+				<ul class="social_links pull-right bigger-170">
+					<li>
+						<a href="#">
+							<i class="fa fa-tumblr color-strong-orange2"></i>
+						</a>
+					</li>	
+					<li>	
+						<a href="#">
+							<i class="fa fa-twitter color-strong-orange2"></i>
+						</a>
+					</li>	
+					<li>	
+						<a href="#">
+							<i class="fa fa-facebook color-strong-orange2"></i>
+						</a>
+					</li>	
+					<li>	
+						<a href="#">
+							<i class="fa fa-youtube color-strong-orange2"></i>
+						</a>
+					</li>	
+					<li>	
+						<a href="#">
+							<i class="fa fa-google-plus color-strong-orange2"></i>
+						</a>
+					</li>	
+					<li>	
+						<a href="#">
+							<i class="fa fa-rss color-strong-orange2"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="social_links pull-right bigger-170 m15r">
+					<li>
+						<a href="#">
+							<img src="i/Lefs_clefs_dor_41x45-1.gif" alt="">
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+							<img src="i/seven.gif" alt="">
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+							<img src="i/elite_tours_en_1.gif" alt="">
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+							<img src="i/link0.gif" alt="">
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+							<img src="i/managerlogo.png" alt="">
+						</a>
+					</li>	
+				</ul>
+				<span class="copiright">Все права защищены</span>
+				
+			
+			</div>
 		
 		</div>
 	</footer>
 	<script src="js/calendar2.js" type="text/javascript"></script>
+	<div id="select-fon-close" onClick="js_select_close_fon()"></div>
 	<div class="popup-fild" onClick="js_login_close_fon(event)">
 		<div class="center">
 			<form class="callback">
@@ -499,7 +606,7 @@
 				<div class="">
 					Наш менеджер перевонит вам в ближайшее время!
 				</div>
-				<input class="m10t"type="text">
+				<input class="m10t" type="text">
 				<input class="m10t" type="text">
 				 <a href="#" class="btn bg-btn-vivid-orange M15T">ЗАКАЗАТЬ</a>
 	
@@ -507,7 +614,6 @@
 	
 		</div>
 	</div>
-	
-	
+	<div class="big-fon"></div>
 </body>
 </html>
