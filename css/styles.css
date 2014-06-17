@@ -526,7 +526,7 @@ input{
 	background-color: #faf9f7;
 	border: 1px solid #e9e8e7;
 	border-radius: 12px;
-	
+	left: 1400px;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -791,6 +791,10 @@ thead .w480{
 	z-index: 50;
 
 }
+.z70{
+	z-index: 70;
+
+}
 #select-fon-close{
 	display: none;
 	position: fixed;
@@ -799,6 +803,8 @@ thead .w480{
 	top: 0px;
 	left: 0px;
 	z-index: 60;
+	background-color: #ff0;
+	opacity: 0.5;
 }
 .slider-txt1{
 	display: block;
@@ -829,10 +835,15 @@ thead .w480{
 	text-align: center;	
 	color: #9d6f16;
 }
-
-
-
-
+#fc{
+	z-index: 90;
+}
+#select4, #select3{
+	z-index: 250;
+}
+body, .big-fon, .bg-header{
+	min-width: 1010px;
+}
 
 
 

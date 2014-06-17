@@ -1,6 +1,20 @@
 var current_slide = 2;
 var all_slide;
 
+window.onload = function() {
+	all_slide = document.getElementsByClassName('slide').length;
+	if(all_slide < 8){
+		document.getElementsByClassName('arrow-prev')[0].style.display = 'none';
+		document.getElementsByClassName('arrow-next')[0].style.display = 'none';
+	}
+	
+	
+
+	
+}
+
+
+
 function js_next_slide(){
 	all_slide = document.getElementsByClassName('slide').length;
 	i = current_slide;
@@ -101,19 +115,43 @@ function js_prev_slide(){
 		current_slide = all_slide-1;
 	}
 }
+
 window.onload = function() {
 	t=setTimeout('startTime()',10);
-
+	all_slide = document.getElementsByClassName('slide').length;
+	if(all_slide > 4){
+		document.getElementsByClassName('arrow-prev')[0].style.display = 'block';
+		document.getElementsByClassName('arrow-next')[0].style.display = 'block';
+		document.getElementsByClassName('slide')[0].classList.add('slide-l2');
+		document.getElementsByClassName('slide')[1].classList.add('slide-l1');
+		document.getElementsByClassName('slide')[2].classList.add('slide-active');
+		document.getElementsByClassName('slide')[3].classList.add('slide-r1');
+		document.getElementsByClassName('slide')[4].classList.add('slide-r2');
+		for(i=5; i<all_slide; i++){
+			document.getElementsByClassName('slide')[i].classList.add('slide-l2');
+		}
+	}
+	else{
+		document.getElementsByClassName('slide')[0].classList.add('slide-l1');
+		document.getElementsByClassName('slide')[1].classList.add('slide-active');
+		document.getElementsByClassName('slide')[2].classList.add('slide-r1');
+	}
 }
 // таймер обратного отсчета
-function startTime(){
+function startTime(dateend){
 	var tm=new Date();
 	var d=tm.getDate();
 	var h=tm.getHours();
 	var m=tm.getMinutes();
 	var s=tm.getSeconds();
+	
+	
+	
+	year = 2014;
+	month = 7;
+	day = 5;
 	// дата окончания отсчета
-	var end = new Date(2014, 5,19);
+	var end = new Date("2014-6-28");
 	var elapsed = end - tm;
 	/*document.getElementById('cell-day').innerHTML= div(elapsed, 86400000);*/
 	d = div(elapsed, 86400000); 
